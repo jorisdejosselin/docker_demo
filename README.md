@@ -1,4 +1,4 @@
-# docker_demo
+# salt_SUE2019_demo
 
 If you were at SUE 2019 you would have probably come here to look at the demo code. Well here it is!
 
