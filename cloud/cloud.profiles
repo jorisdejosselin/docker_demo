@@ -1,0 +1,15 @@
+docker_master:
+  # points back at provider configuration
+  provider: local-kvm
+  base_domain: centos7.0
+  ip_source: qemu-agent
+  ssh_username: root
+  password: Test2018!
+
+docker_slave:
+  # points back at provider configuration
+  provider: local-kvm
+  base_domain: centos7.0
+  ip_source: qemu-agent
+  ssh_username: root
+  password: Test2018!

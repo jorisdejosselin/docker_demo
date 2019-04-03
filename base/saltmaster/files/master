@@ -1,0 +1,21 @@
+# Home salt master file configs
+worker_threads: 16
+
+file_roots:
+  base:
+    - /srv/salt/base
+
+pillar_roots:
+  base:
+   - /srv/salt/base/pillar
+
+fileserver_backend:
+ - roots
+
+reactor: 
+  - 'salt/cloud/docker_master01/created':         
+    - salt://docker/orch/init.sls
+ 
+publisher_acl:
+  joris:
+    - .*

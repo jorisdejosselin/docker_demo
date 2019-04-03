@@ -1,0 +1,29 @@
+docker_master:
+  - docker_master01:
+      grains:
+          hostname: master01
+          ip: 192.168.122.50
+          virtmem: 2
+          virtcpu: 2
+      minion:
+        master: 192.168.122.1
+          
+docker_slave:
+  - docker_slave01:
+      grains:
+          hostname: slave01
+          ip: 192.168.122.51
+          virtmem: 2
+          virtcpu: 2
+      minion:
+        master: 192.168.122.1
+#  - docker_slave02:
+#      grains:
+#          hostname: slave02
+#          ip: 192.168.122.51
+#          virtmem: 2
+#          virtcpu: 2
+#      minion:
+#        master: 192.168.122.1
+
+
